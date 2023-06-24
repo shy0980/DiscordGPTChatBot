@@ -1,11 +1,14 @@
 import random
 import openai
+from decouple import config
+api_key = config('API_GPT')
 
-openai.api_key = "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"
+openai.api_key = api_key
 
 messages = [
     {"role": "system", "content": "You are a kind helpful assistant."},
 ]
+
 
 def handle_response(message) -> str:
 
