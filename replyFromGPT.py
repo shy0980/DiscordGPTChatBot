@@ -1,6 +1,6 @@
 import openai
 
-secret_key = "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"
+secret_key = "GET FROM ENV"
 
 openai.api_key = secret_key
 
